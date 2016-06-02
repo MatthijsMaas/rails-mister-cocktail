@@ -44,7 +44,7 @@ group :development do
   gem 'spring'
 end
 
-<<<<<<< HEAD
-=======
+
 gem 'rspec-rails', group: [ :test ]
->>>>>>> 887ddbf09952d310c7d55c2a30594c26140047e5
+
+gem 'rspec-rails', group: [ :test ]
