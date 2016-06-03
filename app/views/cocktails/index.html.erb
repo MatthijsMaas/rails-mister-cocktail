@@ -10,7 +10,7 @@
 
 <h2> <%= cocktail.name %></h2>
 <p> ingredients: <% cocktail.doses.each do |dose| %>
-  <p> <%= dose.description %> <%= dose.ingredient.name %>
+  <p> <%= dose.description %> of <%= dose.ingredient.name %>
     <% end  %> </p>
 
 <!--

@@ -5,9 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Ingredient.destroy_all
 Cocktail.destroy_all
 Dose.destroy_all
+Ingredient.destroy_all
 
 
 8.times do
