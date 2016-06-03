@@ -19,6 +19,8 @@ end
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
+Ingredient.create(name: "vodka")
+Ingredient.create(name: "highland whisky")
 Ingredient.create(name: "uranium-238")
 Ingredient.create(name: "one ring")
 Ingredient.create(name: "ginger")
@@ -27,6 +29,5 @@ Ingredient.create(name: "ice cube")
 Ingredient.create(name: "straw")
 Ingredient.create(name: "umbrella")
 Ingredient.create(name: "state secrets")
-
 
 
