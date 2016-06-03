@@ -5,3 +5,28 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Ingredient.destroy_all
+Cocktail.destroy_all
+Dose.destroy_all
+
+
+8.times do
+  name = Faker::Hipster.words(2).join(" ")
+  Cocktail.create(name: name)
+end
+
+
+Ingredient.create(name: "lemon")
+Ingredient.create(name: "ice")
+Ingredient.create(name: "mint leaves")
+Ingredient.create(name: "uranium-238")
+Ingredient.create(name: "one ring")
+Ingredient.create(name: "ginger")
+Ingredient.create(name: "sparkles")
+Ingredient.create(name: "ice cube")
+Ingredient.create(name: "straw")
+Ingredient.create(name: "umbrella")
+Ingredient.create(name: "state secrets")
+
+
+
