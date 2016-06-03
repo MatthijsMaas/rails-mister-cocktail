@@ -1,24 +1,20 @@
-
+<div class="container">
 <h1>My list of cocktails</h1>
 
 <hr>
 <h2> <%= link_to 'New cocktail', new_cocktail_path %> </h2>
 <hr>
 
-
 <% @cocktails.each do |cocktail| %>
 
 <h2> <%= cocktail.name %></h2>
+<%= cl_image_tag cocktail.photo, height: 300, width: 400, crop: :fill %>
 <p> ingredients: <% cocktail.doses.each do |dose| %>
   <p> <%= dose.description %> of <%= dose.ingredient.name %>
     <% end  %> </p>
-
-<!--
-  <p> doses: <% cocktail.doses.each do |dose| %>
-  <%= dose.description %> |
-  <% end  %> </p> -->
-
   <p> <%= link_to 'Show', cocktail_path(cocktail) %>  </p>
   <hr>
-  <% end %>
+</p>
+<% end %>
+</div>
 
